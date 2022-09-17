@@ -1,29 +1,30 @@
 # IBM-Project-21978-1659800383
-Web Phishing Detection
 
 # Phishing Website detection using Machine Learning
 import pwd
-
-
 pwd
+
 # Importing Libraries
 import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
+
 # Loading and reading the dataset
 data =pd.read_csv('phishing.csv')
 
 #displaying the first 10 rows
 data.head(5)
+
 #Displaying data in an easier manner to read
-
 data.head(10).T
-#Displaying the shape of the dataset
 
+#Displaying the shape of the dataset
 data.shape
+
 #Displaying the summary of Dataset
 data.info()
+
 # Data Preprocessing
 
 Here, we clean the data by applying data preprocesssing techniques and transform the data to use it in the models.
@@ -152,4 +153,6 @@ From the above comparision, it is clear that the Logistic Regression works well 
 import pickle
 pickle.dump(model, open("LogisticRegressionClassifier.pickle.dat", "wb"))
 pickle.dump(model, open("phishing.pkl", "wb"))
+
+
 This is an end of Project
