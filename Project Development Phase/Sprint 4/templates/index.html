@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+        <title>web phishing detection</title>
+        <link rel="stylesheet" href="/static/index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <meta name="description" content="This website is develop for identify the safety of url.">
+        <meta name="keywords" content="phishing url,phishing,cyber security,machine learning,classifier,python">
+        <meta name="author" content="ANAND">
+        <!-- <link rel="stylesheet" href=""> -->
+    </head>
+    <body>
+        <header class="web">
+            <nav class="navbar">
+                <div class="navbar__brand">
+                    <img src="/static/logo.jpeg" alt="logo" class="brand__logo">
+                </div>
+                <div class="navbar__nav__items">
+                    <ul>
+                        <li class="nav__items__home">
+                            <a href="login" class="nav__items__button">Home</a>
+                        </li>
+                        <li class="nav__items__menu">
+                            <a href="About" class="nav__items__button">About</a>
+                        </li>
+                        <!-- <li class="nav__items__about">
+                            <a href="#pricing" class="nav__items__button">Pricing</a>
+                        </li> -->
+                        <li class="nav__items__contact">
+                            <a href="contact" class="nav__items__button">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+        <main class="container">
+            <div class="image__container" >
+                <div class="image__container__cool">
+                    <img src="/static/image2.jpeg" alt="phisher" class="image__image1__container__cool">
+                </div>
+                <div class="text__container">
+                    <div class="text__container__intro">
+                        <style>
+                            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+                            </style>
+                        <span class="text__intro__welcome">Machine learning powered, real-time phishing and fraudulent website detection</span>
+                    </div>
+                </div>
+                <div class="text__container__des">
+
+                    <h1 class="text__des__quote">
+                        CheckPhish uses Machine learning, computer vision and NLP to mimic how a person<br> would look at, understand, and draw a verdict on a suspicious website. Our engine learns from<br> high quality, 
+                        proprietary datasets containing millions of image and text samples for high accuracy detection
+                    </h1>
+                </div>
+            </div>
+            <div class="space__container"></div>
+            <div class="section__container scanner-section">
+                <div class="section__container__hello">
+                    <div class="bad">
+                        <div class="school">
+                            <h1 class="text21">Web Phishing detection website </h1>
+                            
+                            <div class="subsection">
+                                <div class="type-button">
+                                    <div class="stbutton">Url Scan</div>
+                                    <!-- <div class="stbutton type-button">IP/DOMAIN </div> -->
+                                </div>
+                                <div class="searchcontainer">
+                                    <div class="search-bar">
+                                        <form action="/y_predict" method="POST" class="scannner">
+                                        <input class="search-text-field" type='text'  id="url" placeholder="Enter a URL:www.example.com" name="url">
+                                    
+                                        <input class="search-bar-button" type="submit" value='predict'>
+                                        </form>
+                                        <b>{{prediction_text}}</b>
+                                        <p>{{url}}</p>>
+                                        
+                                    </div>
+                            
+                                      
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="space__container"></div>
+            <!-- <div class="category">
+                    
+                <div class="first__category">
+                    <img src="./cake1.jpg" class="category__catimage" >
+                    <div class="descr__category">
+                        <h2>Standard</h2>
+                        <p><a class="recipe__btn">FREE</a></p>
+                        <p>Bulk scan functionality<br>
+                            Advanced API dashboard<br>
+                            Private scan<br>
+                        </p>
+                        <a class="catbutton" href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="first__category">
+                    <img src="./cake2.jpg" class="category__catimage" >
+                    <div class="descr__category">
+                        <h2>Premium</h2>
+                        <p><a class="recipe__btn">$20/Month</a></p>
+                        <p> Multi-user environments (coming soon)<br>
+                            Dedicated support<br>
+                        </p>
+                        <a class="catbutton" href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="first__category">
+                    <img src="./spaghetti1.jpg" class="category__catimage" >
+                    <div class="descr__category">
+                        <h2>Ultra premium</h2>
+                        <p><a class="recipe__btn">$100/Month</a></p>
+                        <p>Custom SLAs<br>
+                            Dedicated account management support<br></p>
+                        <a class="catbutton" href="#">Buy Now</a>
+                    </div>
+                </div> -->
+                <!-- <div class="first__category" >
+                    <img src="./toast1.jpg" class="category__catimage" >
+                    <div class="descr__category">
+                        <h2>Toast</h2>
+                        <p><a class="recipe__btn">134 recipies</a></p>
+                        <p>This time, I served it on brown butter Demi baguette toast from Bien Cuit that came in my Farm to People basket</p>
+                        <a class="catbutton" href="#">Learn more</a>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <div class="space__container"></div>
+            <div class="newspaper__container" id="contact">
+                <div class="newspaper__filter">
+                    <div class="action__call">
+                        <h2> Sign Up for Newspaper</h2>
+                        <input type="text" placeholder="Enter your email">
+                        <button> Sign in</button>
+                    </div>
+                </div>
+            </div>  -->
+        </main>
+        <footer class="footer">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <div class="footercontainer">
+                <div class="row">
+                    <div class="footer__col">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Security Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Let us help you</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Account details</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="footer__col">
+                        <h4>Phoenix</h4>
+                        <ul>
+                            <li><a href="#">Phoenix Stories</a></li>
+                            <li><a href="#">Phoenixcons</a></li>
+                            <li><a href="#">Gifts cards</a></li>
+                        </ul>
+                    </div> -->
+                    <!-- <div class="footer__col">
+                        <h4>Follow Us</h4>
+                        <ul class="social-links">
+                            <li><a href="https://www.facebook.com/anand417/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/phoenix_an_and02/?r=nametag"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=" https://twitter.com/Phoenixa104?s=08"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/anand-k-943823205/"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+            <div class="footer__down">
+                <span>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2021 © Web Phishing Detection. All rights by Deserved</span>
+            </div>
+        </footer>
+
+    
+
+
+
+
+
+
+
+
+
+        <!-- <header class="header">
+            <div class="web-header-container">
+                <a href="/"><img src="/static/media/CP_by_BO_logo.0dcb01d1.svg" alt="companyIcon">
+                </a>
+                <div class="tabs-container nav">
+                    <div class="cool nav-item">
+                        <div class="new-label-text"></div>
+                        <a href="/pricing" data-rb-event-key="/pricing" class="nav-link">Pricing</a></div>
+                    <div class="cool nav-item">
+                        <a aria-haspopup="true" aria-expanded="false" id="Brands" href="#" class="cool nav-link" role="button">Brands</a>
+                    </div>
+                    <div class="cool nav-item">
+                        <a aria-haspopup="true" aria-expanded="false" id="Resources" href="#" class="cool nav-link" role="button">Resources</a>
+                    </div>
+                    <div class="cool nav-item"><div class="new-label-text"></div>
+                    <a href="/contact-us" data-rb-event-key="/contact-us" class="cool nav-link">Contact Us</a>
+                </div>
+            </div>
+            <div class="musthaq">
+                <a href="/auth/login">
+                    <button type="button" class=" login-button-box">
+                    <div class="login-button">Log In</div></button></a>
+            <a href="/auth/register"><button type="button" class="web-header-button sign-up-button-box px-4 btn btn-primary"><div class="sign-up-button">Sign Up</div></button></a></div>
+            <div class="dol"><img class="cursor-pointer" src="/static/media/HamburgerBlack.b038b3ec.svg" alt="menu">
+            </div>
+            </div>
+        </header> -->
+    </body>
+</html>
