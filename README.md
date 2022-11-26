@@ -10,6 +10,8 @@ IBM-Project-21978-1659800383
 ![image](https://user-images.githubusercontent.com/112074135/204002250-fedf7e6b-f210-4775-a243-7deeb6c0fef6.png)
 
 
+
+
 ### Team Members :  <picture><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f603/512.gif" alt="😃" width="30" height="30"></picture>
 
    - Chandru S
@@ -18,7 +20,10 @@ IBM-Project-21978-1659800383
    - Ashok E
    -Purushothaman
    
-    ## Project Objectives : <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Bomb.png" alt="Bomb" width="25" height="25" />
+   ![Uploading pexels-pixabay-270404.jpg…]()
+   
+   
+ ## Project Objectives : <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Bomb.png" alt="Bomb" width="25" height="25" />
 
  #### By the end of this project :
  - We'll  be able to understand the problem to classify if it is a regression or a    classification kind of problem.
